@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <main >
       <Navbar />
-      asdfsad
       Home
     </main>
   )
