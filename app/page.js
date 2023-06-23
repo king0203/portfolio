@@ -2,7 +2,8 @@ import AnimatedText from "@/components/AnimatedText";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-import {LinkArrow} from "@/components/Icon";
+import { LinkArrow } from "@/components/Icon";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,9 +16,12 @@ export default function Home() {
           </div>
           <div className="w-1/2">
             <AnimatedText
-              text="Building Beautiful Websites with Purpose."
-              classname="!text-left !text-6xl"
+              text="Darshan Arkhade"
+              classname="!text-left !text-5xl"
             />
+            <h3 className="text-2xl font-medium text-blue-800">
+              Software Developer
+            </h3>
             <p className="text-base my-4 font-medium">
               Welcome to my portfolio, where I specialize in crafting beautiful
               websites with a purpose. I believe in the power of design and
@@ -30,18 +34,25 @@ export default function Home() {
                 target="_blank"
                 className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold 
               hover:bg-light hover:text-dark border-2 border-solid  border-transparent hover:border-dark   "
-                download={true}
               >
-                Resume <LinkArrow className={"w-6  ml-1"}/>
+                Resume <LinkArrow className={"w-6  ml-1"} />
               </Link>
-              <Link href="mailto: arkhadedarshan@gmail.com" target="_blank" 
-              className="text-dark text-lg ml-4 font-medium capitalize underline">
+              <Link
+                href="mailto: arkhadedarshan@gmail.com"
+                target="_blank"
+                className="text-dark text-lg ml-4 font-medium capitalize underline"
+              >
                 Contact
               </Link>
             </div>
           </div>
+          <div className="absolute right-8 bottom-8 inline-block">
+            <Image src="Images/bulb.svg" alt="DA" height={96} width={96} />
+          </div>
         </div>
       </div>
+
+      <Footer />
     </main>
   );
 }
