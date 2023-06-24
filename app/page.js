@@ -1,9 +1,9 @@
 import AnimatedText from "@/components/AnimatedText";
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icon";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
