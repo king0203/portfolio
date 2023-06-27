@@ -8,7 +8,7 @@ const quote = {
   },
   animate: {
     opacity: 1,
-    transition : {
+    transition: {
       delay: 0.5,
       staggerChildren: 0.08,
     },
@@ -22,7 +22,7 @@ const singleWord = {
   animate: {
     opacity: 1,
     y: 0,
-    transition : {
+    transition: {
       duration: 1,
     },
   },
@@ -43,7 +43,6 @@ const AnimatedText = ({ text, classname = "" }) => {
             key={word + "-" + index}
             className="inline-block"
             variants={singleWord}
-            
           >
             {/* for unique key */}
             {word}&nbsp;
