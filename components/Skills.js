@@ -12,10 +12,10 @@ function Skills() {
   );
 
   return (
-    <div className="pt-0 px-32 py-8">
+    <div className="pt-0 px-32">
       <div className="container mx-auto ">
-        <h1 className="text-6xl font-bold mb-4 text-center">Skills</h1>
-        <p className="text-lg font-medium">
+        <h1 className="text-8xl font-bold mb-4 text-center">Skills</h1>
+        <p className="text-xl font-medium">
           I love to learn new technologies, and this has helped me dive deep
           into different fields and master the skills of developing agile and
           scalable applications.
