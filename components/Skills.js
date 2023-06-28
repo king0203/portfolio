@@ -4,7 +4,7 @@ import { Icons } from "./SkillIcon.js";
 function Skills() {
   const IconItem = (props) => (
     <div className="flex flex-col items-center" draggable={true}>
-      {React.createElement(props.icon, { ...props.options, size: 40 })}
+      {React.createElement(props.icon, { ...props.options, size: 44 })}
       <h4 className="hidden bg-blue-300 px-1 rounded-lg z-10 opacity-100 group-hover:inline text-md font-medium">
         {props.name}
       </h4>
@@ -12,8 +12,8 @@ function Skills() {
   );
 
   return (
-    <div className="pt-0 px-32">
-      <div className="container mx-auto ">
+    <div className="pt-20 ">
+      <div className="container m-12 mb-8  w-full">
         <h1 className="text-8xl font-bold mb-4 text-center">Skills</h1>
         <p className="text-xl font-medium">
           I love to learn new technologies, and this has helped me dive deep
@@ -21,7 +21,7 @@ function Skills() {
           scalable applications.
         </p>
       </div>
-      <div className="container mx-auto px-4 mt-8 flex justify-start flex-wrap">
+      <div className="container  w-full mt-8 m-12 flex justify-start flex-wrap">
         {Icons.map(
           (language, index) =>
             language.icon && (

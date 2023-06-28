@@ -1,13 +1,20 @@
 "use client"
 import React, { useRef } from "react";
-import { motion, useScroll } from "framer-motion"
-import LiIcon from "./LiIcon"
+import { motion, spring, useScroll } from "framer-motion";
+import LiIcon from "./LiIcon";
 
 const Details= ({position, company, companyLink, time , address, work})=>{
-  const ref=useRef(null)
-    return <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-3/5 mx-auto flex flex-col items-center justify-between">
+  const ref=useRef(null);
+    return (
+    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-3/5 mx-auto flex flex-col items-center justify-between">
         <LiIcon reference={ref}/>
-        <div>
+        <motion.div
+        initial={{y:50}}
+        whileInView={{y:0}}
+        transition={{duration:0.5, type:spring}}
+        
+        >
+
             <h3 className="capitalize font-bold text-2xl">{position}&nbsp;<a href={companyLink}
             className="text-primary capitalize">@{company}</a></h3>
             
@@ -17,8 +24,8 @@ const Details= ({position, company, companyLink, time , address, work})=>{
             <p className="font-medium w-full">
                 {work}
             </p>
-        </div>
-    </li>
+        </motion.div>
+    </li>)
 }
 
 const Experience = () => {

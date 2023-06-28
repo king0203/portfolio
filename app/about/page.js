@@ -6,6 +6,7 @@ import Image from "next/image";
 import profile from "../../public/Images/profile.jpg";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 const about = () => {
   return (
@@ -55,22 +56,23 @@ const about = () => {
 
             <div className="col-span-2 flex flex-col items-end justify-evenly">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold ">
-                  10+
-                </span>
-                <h2 className="text-xl capitalize font-medium text-dark/75">Projects</h2>
+                <span className="inline-block text-7xl font-bold ">10+</span>
+                <h2 className="text-xl capitalize font-medium text-dark/75">
+                  Projects
+                </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold ">
-                  1+
-                </span>
-                <h2 className="text-xl capitalize font-medium text-dark/75">Years Of Experience</h2>
+                <span className="inline-block text-7xl font-bold ">1+</span>
+                <h2 className="text-xl capitalize font-medium text-dark/75">
+                  Years Of Experience
+                </h2>
               </div>
             </div>
           </div>
+          <Skills />
+          {/* <Experience /> */}
+          <Education />
         </div>
-        <Skills />
-        <Experience/>
       </main>
 
       <Footer />
