@@ -40,7 +40,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-7 mr-3"
         >
-          <TwitterIcon />{" "}
+          <TwitterIcon />
         </motion.a>
         <motion.a
           href="https://github.com/king0203"
