@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import profile from "../../public/Images/profile.jpg";
+import Skills from "@/components/Skills";
 
 const about = () => {
   return (
@@ -67,7 +68,9 @@ const about = () => {
             </div>
           </div>
         </div>
+        <Skills />
       </main>
+
       <Footer />
     </>
   );
