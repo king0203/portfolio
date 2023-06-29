@@ -8,8 +8,13 @@ import Navbar from "@/components/Navbar";
 import Particles from "react-tsparticles";
 const particleOptions = require("../utils/particles.json");
 import ParticlesContainer from "@/components/ParticlesContainer";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <main>
       <Particles id="tsparticles" options={particleOptions}/>
@@ -19,7 +24,7 @@ export default function Home() {
 
       <div className="w-full h-full inline-block z-0  bg-light p-32 pt-0">
         <div className="flex items-center justify-between w-full">
-          <div className="w-1/2 z-2">
+          <div className="w-1/2">
             <Image src="/Images/bg1.png" alt="bg" width={500} height={500} />
           </div>
           <div className="w-1/2">
