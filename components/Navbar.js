@@ -34,7 +34,7 @@ const Navbar = () => {
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="mx-4" />
-        <CustomLink href="/articles" title="Articles" className="ml-4" />
+        {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
       </nav>
       <nav className="flex flex-row justify-center items-center flex-wrap">
         <motion.a
@@ -75,7 +75,7 @@ const Navbar = () => {
         </motion.a>
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`p-1 ml-3 rounded-full
+          className={`p-1 ml-4 rounded-full
           ${mode==="light" ?  'bg-dark text-light': 'bg-light text-dark'}`}
         >
           {mode === "dark" ? (
