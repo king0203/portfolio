@@ -10,10 +10,13 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { GithubIcon } from "@/components/Icon";
 import securx from "../../public/Images/securx.png";
+import portfolio from "../../public/Images/portfolio.png";
+
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full p-12 flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl">
+    <article className="w-full p-12 flex items-center relative justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl">
+      <div className="absolute top-0 -right-3 -z-10 bg-black w-[101%] h-[103%] rounded-[2.5rem] rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -50,7 +53,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full p-6 flex flex-col items-center justify-between rounded-2xl border border-solid border-dark bg-light shadow-2xl relative">
+    <article className="w-full p-6 flex flex-col items-center  justify-between rounded-2xl border border-solid border-dark bg-light shadow-2xl relative">
+      <div className="absolute top-0 -right-3 -z-10 bg-black w-[101%] h-[103%] rounded-[2rem] rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
@@ -58,7 +62,7 @@ const Project = ({ type, title, img, link, github }) => {
       >
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
-      <div className="w-full flex flex-col items-start justify-betweenmt-4 ">
+      <div className="w-full flex flex-col items-start justify-between mt-4 ">
         <span className="text-primary font-medium text-xl">{type}</span>
         <Link
           href={link}
@@ -67,16 +71,16 @@ const Project = ({ type, title, img, link, github }) => {
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold ">{title}</h2>
         </Link>
-        <div className="mt-2 flex items-center ">
-          <Link href={github} target="_blank" className="w-10">
-            <GithubIcon />
-          </Link>
+        <div className="mt-2 flex w-full justify-between items-center ">
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold"
+            className="rounded-lg  text-lg font-semibold underline"
           >
             Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-8">
+            <GithubIcon />
           </Link>
         </div>
       </div>
@@ -96,14 +100,15 @@ const projects = () => {
             text="Imagination Trumps Knowledge!"
             classname="mb-16"
           />
-          <div className="grid grid-cols-12 gap-24 ">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 ">
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
-                title="SecurX"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
+                title="SecurX- Password Manager"
+                summary="
+                Developed a cryptographically secured password manager, SecurX using Node.js, RSA encryption, and SHA-256
+hashing for robust data protection.
+                "
                 link="https://securex-ultimate-password-manager.netlify.app/"
                 img={securx}
                 github="https://github.com/king0203/SecurX"
@@ -119,10 +124,43 @@ const projects = () => {
                 github="https://github.com/king0203/Online-Banking-System"
               />
             </div>
-            <div className="col-span-6">project-2</div>
-            <div className="col-span-12">Featured Project</div>
-            <div className="col-span-6">project-3</div>
-            <div className="col-span-6">project-4</div>
+            <div className="col-span-6">
+              <Project
+                type="Project"
+                title="Banking System"
+                link="https://github.com/king0203/Online-Banking-System"
+                img={securx}
+                github="https://github.com/king0203/Online-Banking-System"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Featured Project"
+                title="Portfolio"
+                summary="A professional portfolio website using Next JS, Framer-motion, and Tailwind CSS. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                link="https://darshan-dev.vercel.app/"
+                img={portfolio}
+                github="https://github.com/king0203/portfolio"
+              />
+            </div>
+            {/* <div className="col-span-6">
+              <Project
+                type="Project"
+                title="Banking System"
+                link="https://github.com/king0203/Online-Banking-System"
+                img={securx}
+                github="https://github.com/king0203/Online-Banking-System"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                type="Project"
+                title="Banking System"
+                link="https://github.com/king0203/Online-Banking-System"
+                img={securx}
+                github="https://github.com/king0203/Online-Banking-System"
+              />
+            </div> */}
           </div>
         </div>
       </main>
