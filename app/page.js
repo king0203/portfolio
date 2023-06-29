@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main>
-      <Particles id="tsparticles" options={particleOptions}/>
+      <Particles id="tsparticles" options={particleOptions} />
       <ParticlesContainer />
 
       <Navbar />

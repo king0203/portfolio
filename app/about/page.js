@@ -15,14 +15,11 @@ import ParticlesContainer from "@/components/ParticlesContainer";
 const about = () => {
   return (
     <>
-     
-
       <Navbar />
       <main className="flex w-full flex-col justify-center items-center">
-    
         <div className="w-full h-full inline-block z-0  bg-light p-32 pt-16">
-        <Particles id="tsparticles" options={particleOptions} />
-      <ParticlesContainer />
+          <Particles id="tsparticles" options={particleOptions} />
+          <ParticlesContainer />
           <AnimatedText text="Passion Fuels Purpose!" classname="mb-16" />
           <div className="grid grid-cols-8 gap-16 w-full">
             <div className=" col-span-3 flex flex-col items-start justify-center">
