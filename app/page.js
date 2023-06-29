@@ -1,17 +1,25 @@
+"use client";
 import AnimatedText from "@/components/AnimatedText";
 import Image from "next/image";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icon";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Particles from "react-tsparticles";
+const particleOptions = require("../utils/particles.json");
+import ParticlesContainer from "@/components/ParticlesContainer";
 
 export default function Home() {
   return (
     <main>
+      <Particles id="tsparticles" options={particleOptions}/>
+      <ParticlesContainer />
+
       <Navbar />
+
       <div className="w-full h-full inline-block z-0  bg-light p-32 pt-0">
         <div className="flex items-center justify-between w-full">
-          <div className="w-1/2">
+          <div className="w-1/2 z-2">
             <Image src="/Images/bg1.png" alt="bg" width={500} height={500} />
           </div>
           <div className="w-1/2">

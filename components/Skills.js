@@ -18,7 +18,7 @@ function Skills() {
   return (
     <div className="pt-20 ">
       <div className="container m-12 mb-8  w-full">
-        <h1 className="text-8xl font-bold mb-4 text-center">Skills</h1>
+        <h1 className="text-8xl font-bold mb-12 text-center">Skills</h1>
         <p className="text-xl font-medium">
           I love to learn new technologies, and this has helped me dive deep
           into different fields and master the skills of developing agile and

@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 import React from "react";
 import { Particles } from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -12,7 +12,7 @@ const ParticlesContainer = () => {
 
   return (
     <Particles
-      className="w-full h-min-screen absolute -translate-z-2"
+      className="w-auto h-full absolute -translate-z-2 -z-10"
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
@@ -38,20 +38,28 @@ const ParticlesContainer = () => {
           },
           modes: {
             push: {
-              quantity: 70,
+              quantity: 50,
             },
             repulse: {
-              distance: 100,
+              distance: 70,
               duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: "#000000",
+            value: [
+              'BB4D10',
+              '#820E42',
+              '#BD740F',
+              '#248592',
+              '#5F4DAF',
+              '#8BA00F',
+            ],
           },
           links: {
-            distance: 100,
+            color:'#ffffff',
+            distance: 120,
             enable: true,
             obacity: 0,
             width: 0,
@@ -66,24 +74,24 @@ const ParticlesContainer = () => {
               default: "bounce",
             },
             random: false,
-            speed: 1,
+            speed: 0.3,
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 900,
+              area: 800,
             },
-            value: 200,
+            value: 100,
           },
           opacity: {
-            value: 0.5,
+            value: 0.8,
           },
           shape: {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 4 },
           },
         },
         detectRetina: true,
