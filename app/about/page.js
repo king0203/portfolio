@@ -16,14 +16,14 @@ const about = () => {
   return (
     <>
       <Navbar />
-      <main className="flex w-full flex-col justify-center items-center">
-        <div className="w-full h-full inline-block z-0  bg-light p-32 pt-16">
+      <main className="flex w-full flex-col justify-center items-center  dark:text-light">
+        <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark p-32 pt-16">
           <Particles id="tsparticles" options={particleOptions} />
           <ParticlesContainer />
           <AnimatedText text="Passion Fuels Purpose!" classname="mb-16" />
           <div className="grid grid-cols-8 gap-16 w-full">
             <div className=" col-span-3 flex flex-col items-start justify-center">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 About Me
               </h2>
               <p className="font-medium">
@@ -49,8 +49,9 @@ const about = () => {
               </p>
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
-              <div className="absolute top-0 -right-3 -z-10 bg-black w-[102%] h-[103%] rounded-[2rem]" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8
+            dark:border-light dark:bg-dark">
+              <div className="absolute top-0 -right-3 -z-10 bg-black dark:bg-light w-[102%] h-[103%] rounded-[2rem]" />
               <Image
                 src={profile}
                 alt="profile"
@@ -63,13 +64,13 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-evenly">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold ">10+</span>
-                <h2 className="text-xl capitalize font-medium text-dark/75">
+                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-light/75">
                   Projects
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold ">1+</span>
-                <h2 className="text-xl capitalize font-medium text-dark/75">
+                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-light/75">
                   Years Of Experience
                 </h2>
               </div>

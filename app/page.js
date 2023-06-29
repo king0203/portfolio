@@ -22,7 +22,7 @@ export default function Home() {
 
       <Navbar />
 
-      <div className="w-full h-full inline-block z-0  bg-light p-32 pt-0">
+      <div className="w-full h-full inline-block z-0 text-dark dark:text-light bg-light dark:bg-dark dar p-32 pt-0">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
             <Image src="/Images/bg1.png" alt="bg" width={500} height={500} />
@@ -32,7 +32,7 @@ export default function Home() {
               text="Darshan Arkhade"
               classname="!text-left !text-5xl"
             />
-            <h3 className="text-2xl font-medium text-blue-800">
+            <h3 className="text-2xl font-medium text-blue-800 dark:text-yellow-200">
               Software Developer
             </h3>
             <p className="text-base my-4 font-medium">
@@ -46,14 +46,18 @@ export default function Home() {
                 href="/resume.pdf"
                 target="_blank"
                 className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold 
-              hover:bg-light hover:text-dark border-2 border-solid  border-transparent hover:border-dark   "
+              hover:bg-light hover:text-dark border-2 border-solid  border-transparent hover:border-dark   
+              
+              dark:bg-light dark:text-dark  hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+              "
               >
                 Resume <LinkArrow className={"w-6  ml-1"} />
               </Link>
               <Link
                 href="mailto: arkhadedarshan@gmail.com"
                 target="_blank"
-                className="text-dark text-lg ml-4 font-medium capitalize underline"
+                className="text-dark  text-lg ml-4 font-medium capitalize underline
+                dark:text-light"
               >
                 Contact
               </Link>
