@@ -15,10 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      
       <body
         className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen `}
       >
-        {children}
         <Script id="theme-switcher" strategy="beforeInteractive">
         {`
           if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -28,7 +28,9 @@ export default function RootLayout({ children }) {
              }
            `}
       </Script>
+        {children}
       </body>
+      
     </html>
   );
 }

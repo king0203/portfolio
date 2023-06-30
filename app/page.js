@@ -25,7 +25,14 @@ export default function Home() {
       <div className="w-full h-full inline-block z-0 text-dark dark:text-light bg-light dark:bg-dark dar p-32 pt-0">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
-            <Image src="/Images/bg1.png" alt="bg" width={500} height={500} />
+            <Image
+              src="/Images/bg1.png"
+              alt="bg"
+              width={500}
+              height={500}
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            />
           </div>
           <div className="w-1/2">
             <AnimatedText

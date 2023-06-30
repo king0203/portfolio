@@ -49,8 +49,10 @@ const about = () => {
               </p>
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8
-            dark:border-light dark:bg-dark">
+            <div
+              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8
+            dark:border-light dark:bg-dark"
+            >
               <div className="absolute top-0 -right-3 -z-10 bg-black dark:bg-light w-[102%] h-[103%] rounded-[2rem]" />
               <Image
                 src={profile}
@@ -58,6 +60,9 @@ const about = () => {
                 width={96}
                 height={96}
                 className="w-full h-auto rounded-2xl "
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                quality={100}
               />
             </div>
 

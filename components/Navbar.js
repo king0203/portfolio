@@ -16,8 +16,6 @@ import { usePathname } from 'next/navigation'
 
 const CustomLink = ({ href, title, className = "" }) => {
   const pathname = usePathname()
-  console.log("path:", pathname);
-  console.log("href:", href);
   return (
     //we use group to target particular element from parent , means we hover parent then react
     <Link href={href} className={`${className} relative group`}>
