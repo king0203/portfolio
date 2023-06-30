@@ -11,6 +11,7 @@ import Link from "next/link";
 import { GithubIcon } from "@/components/Icon";
 import securx from "../../public/Images/securx.png";
 import portfolio from "../../public/Images/portfolio.png";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -118,6 +119,7 @@ const Project = ({ type, title, img, link, github }) => {
 const projects = () => {
   return (
     <>
+    <TransitionEffect/>
       <Navbar />
       <main className="flex w-full flex-col justify-center items-center dark:text-light">
         <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark  p-32 pt-16">

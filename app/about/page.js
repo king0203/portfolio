@@ -11,10 +11,12 @@ import Education from "@/components/Education";
 import Particles from "react-tsparticles";
 const particleOptions = require("../../utils/particles.json");
 import ParticlesContainer from "@/components/ParticlesContainer";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const about = () => {
   return (
     <>
+    <TransitionEffect/>
       <Navbar />
       <main className="flex w-full flex-col justify-center items-center  dark:text-light">
         <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark p-32 pt-16">

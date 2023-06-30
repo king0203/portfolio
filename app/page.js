@@ -9,6 +9,7 @@ import Particles from "react-tsparticles";
 const particleOptions = require("../utils/particles.json");
 import ParticlesContainer from "@/components/ParticlesContainer";
 import { useEffect } from "react";
+import TransitionEffect from "@/components/TransitionEffect";
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Home() {
 
   return (
     <main>
+      <TransitionEffect/>
       <Particles id="tsparticles" options={particleOptions} />
       <ParticlesContainer />
 
