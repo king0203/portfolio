@@ -32,7 +32,7 @@ export default function Home() {
               text="Darshan Arkhade"
               classname="!text-left !text-5xl"
             />
-            <h3 className="text-2xl font-medium text-blue-800 dark:text-primaryDark">
+            <h3 className="text-2xl font-bold text-primary dark:text-primaryDark">
               Software Developer
             </h3>
             <p className="text-base my-4 font-medium">

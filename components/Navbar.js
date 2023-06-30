@@ -12,16 +12,20 @@ import { motion } from "framer-motion";
 import useThemeSwitcher from "./useThemeSwitcher";
 import { SunIcon } from "@/components/Icon";
 import { MoonIcon } from "@/components/Icon";
+import { usePathname } from 'next/navigation'
 
 const CustomLink = ({ href, title, className = "" }) => {
+  const pathname = usePathname()
+  console.log("path:", pathname);
+  console.log("href:", href);
   return (
     //we use group to target particular element from parent , means we hover parent then react
     <Link href={href} className={`${className} relative group`}>
       {title}
       <span
         className={`h-0.5 inline-block w-0 left-0 -bottom-0.5 bg-dark dark:bg-light absolute
-      group-hover:w-full transition-width ease duration-300`}
-      ></span>
+      group-hover:w-full transition-width ease duration-300 ${pathname  === href ? "w-full" : "w-0"}`}
+      >&nbsp;</span>
     </Link>
   );
 };
