@@ -25,7 +25,7 @@ const about = () => {
           <AnimatedText text="Passion Fuels Purpose!" classname="mb-16" />
           <div className="grid grid-cols-8 gap-16 w-full">
             <div className=" col-span-3 flex flex-col items-start justify-center">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-primary">
                 About Me
               </h2>
               <p className="font-medium">
@@ -52,16 +52,16 @@ const about = () => {
             </div>
 
             <div
-              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8
+              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-6
             dark:border-light dark:bg-dark"
             >
-              <div className="absolute top-0 -right-3 -z-10 bg-black dark:bg-light w-[102%] h-[103%] rounded-[2rem]" />
+              <div className="absolute top-0 -right-3 -z-10 bg-dark dark:bg-light w-[102%] h-[103%] rounded-[2rem]" />
               <Image
                 src={profile}
                 alt="profile"
                 width={96}
                 height={96}
-                className="w-full h-auto rounded-2xl "
+                className="w-full h-auto rounded-2xl border-solid border-2 dark:border-black  "
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={100}
@@ -71,13 +71,13 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-evenly">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold ">10+</span>
-                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-light/75">
+                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark">
                   Projects
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold ">1+</span>
-                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-light/75">
+                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark">
                   Years Of Experience
                 </h2>
               </div>

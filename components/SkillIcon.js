@@ -6,7 +6,8 @@ const data = [
     name: 'JavaScript',
     icon: SiJavascript,
     options: {
-      color: 'yellow'
+      color: 'yellow',
+      className : 'bg-black'
     }
   },
   {
@@ -51,12 +52,12 @@ const data = [
       color: '#61DAFB'
     }
   },
- 
   {
     name: 'GitHub',
     icon: SiGithub,
     options: {
-      color: 'black'
+      color: 'black',
+      className:'dark:fill-white '
     }
   },
 
@@ -64,14 +65,16 @@ const data = [
     name: 'Linux',
     icon: SiLinux,
     options: {
-      color: 'black'
+      color: 'black',
+      className:'dark:bg-light rounded-full p-1'
     }
   },
   {
     name: 'NextJs',
     icon: SiNextdotjs,
     options: {
-      color: 'black'
+      color: 'black',
+      className:'dark:fill-white '
     }
   },
   {
@@ -106,7 +109,8 @@ const data = [
     name: 'Express',
     icon: SiExpress,
     options: {
-      color: 'black'
+      color: 'black',
+      className:'dark:fill-white '
     }
   },
   {

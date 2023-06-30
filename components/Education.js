@@ -53,12 +53,14 @@ const Education = () => {
           <Details
             type="Class 12th"
             time="2019-2021 "
-            place="Matoshri Jr college, Nashik, Maharshtra"
+            place="Matoshri Jr college "
+            info="Nashik, Maharshtra, India"
           />
           <Details
             type="Class 10th"
             time="2014-2019 "
-            place="Jawahar Navodaya Vidyalaya, Nashik "
+            place="Jawahar Navodaya Vidyalaya (JNV) "
+            info="Nashik, Maharshtra, India"
           />
         </ul>
       </div>
