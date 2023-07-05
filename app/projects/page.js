@@ -10,7 +10,9 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { GithubIcon } from "@/components/Icon";
 import securx from "../../public/Images/securx.png";
+import movieflix from "../../public/Images/movieflix.png";
 import portfolio from "../../public/Images/portfolio.png";
+import fitness from "../../public/Images/fitness.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -31,7 +33,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         <Image
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-auto border-4 border-gray-300"
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
@@ -83,7 +85,7 @@ const Project = ({ type, title, img, link, github }) => {
         <Image
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-auto border-4 border-gray-300"
           priority
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
@@ -130,6 +132,35 @@ const projects = () => {
             classname="mb-16"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 ">
+          <div className="col-span-12">
+              <FeaturedProject
+                type="Featured Project"
+                title="Portfolio"
+                summary="A professional portfolio website using Next JS, Framer-motion, and Tailwind CSS. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                link="https://darshan-dev.vercel.app/"
+                img={portfolio}
+                github="https://github.com/king0203/portfolio"
+              />
+            </div>
+           
+            <div className="col-span-6">
+              <Project
+                type="Project"
+                title="MovieFlix"
+                link="https://github.com/king0203/movieflix"
+                img={movieflix}
+                github="https://github.com/king0203/movieflix"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                type="Project"
+                title="Fitness Application"
+                link="https://github.com/king0203/Online-Banking-System"
+                img={fitness}
+                github="https://github.com/king0203/Online-Banking-System"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 type="Featured Project"
@@ -144,34 +175,6 @@ hashing for robust data protection.
               />
             </div>
 
-            <div className="col-span-6">
-              <Project
-                type="Project"
-                title="Banking System"
-                link="https://github.com/king0203/Online-Banking-System"
-                img={securx}
-                github="https://github.com/king0203/Online-Banking-System"
-              />
-            </div>
-            <div className="col-span-6">
-              <Project
-                type="Project"
-                title="Banking System"
-                link="https://github.com/king0203/Online-Banking-System"
-                img={securx}
-                github="https://github.com/king0203/Online-Banking-System"
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                type="Featured Project"
-                title="Portfolio"
-                summary="A professional portfolio website using Next JS, Framer-motion, and Tailwind CSS. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
-                link="https://darshan-dev.vercel.app/"
-                img={portfolio}
-                github="https://github.com/king0203/portfolio"
-              />
-            </div>
             {/* <div className="col-span-6">
               <Project
                 type="Project"
