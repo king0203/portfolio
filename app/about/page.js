@@ -19,12 +19,13 @@ const about = () => {
     <TransitionEffect/>
       <Navbar />
       <main className="flex w-full flex-col justify-center items-center  dark:text-light">
-        <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark p-32 pt-16">
+        <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark p-32  mb:pt-8
+         pt-16 md:!pt-12 sm:!pt-8 xl:px-24 lg:px-16  md:px-12 sm:px-8">
           <Particles id="tsparticles" options={particleOptions} />
           <ParticlesContainer />
-          <AnimatedText text="Passion Fuels Purpose!" classname="mb-16" />
+          <AnimatedText text="Passion Fuels Purpose!" classname="mb-16 lg:!text-7xl md:!text-6xl sm:!text-4xl sm:!mb-8" />
           <div className="grid grid-cols-8 gap-16 w-full">
-            <div className=" col-span-3 flex flex-col items-start justify-center">
+            <div className=" col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-primary">
                 About Me
               </h2>
@@ -33,40 +34,40 @@ const about = () => {
               </p>
 
               <p className="font-medium my-4">
-              In addition to web development, I have a genuine fascination for blockchain technology and its potential applications. Exploring decentralized solutions and understanding the intricacies of blockchain has been an exciting journey for me. I am always eager to expand my knowledge in this evolving field.
+              In addition to web development, I have a genuine fascination for blockchain technology and its potential applications. Exploring decentralized solutions and understanding the intricacies of blockchain has been an exciting journey for me.
               </p>
 
               <p className="font-medium">
-              Furthermore, I have a solid understanding of Data Structures and Algorithms (DSA), which allows me to write efficient and optimized code. I enjoy solving complex problems and finding elegant solutions by applying DSA principles
+              Furthermore, I have a solid understanding of Data Structures and Algorithms (DSA), which allows me to write efficient and optimized code.
               </p>
             </div>
 
             <div
-              className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-6
-            dark:border-light dark:bg-dark"
+              className="col-span-3 md:place-self-center relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-6
+            dark:border-light dark:bg-dark xl:col-span-4  md:order-1 md:col-span-8 md:w-3/4 "
             >
-              <div className="absolute top-0 -right-3 -z-10 bg-dark dark:bg-light w-[102%] h-[103%] rounded-[2rem]" />
+              <div className="absolute top-0 -right-3 -z-10 bg-dark dark:bg-light w-[102%] h-[103%] md:h-[102%] rounded-[2rem]" />
               <Image
                 src={profile}
                 alt="profile"
                 width={96}
                 height={96}
-                className="w-full h-auto rounded-2xl border-solid border-2 dark:border-black  "
+                className="w-full h-auto rounded-2xl border-solid border-2 dark:border-black "
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={100}
               />
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-evenly">
+            <div className="col-span-2 flex flex-col items-end justify-evenly xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold ">10+</span>
+                <span className="inline-block text-7xl font-bold  md:text-5xl sm:text-4xl xs:text-3xl">10+</span>
                 <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark">
                   Projects
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold ">1+</span>
+                <span className="inline-block text-7xl font-bold  md:text-5xl sm:text-4xl xs:text-3xl">1+</span>
                 <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark">
                   Years Of Experience
                 </h2>

@@ -127,7 +127,8 @@ const projects = () => {
     <TransitionEffect/>
       <Navbar />
       <main className="flex w-full flex-col justify-center items-center dark:text-light">
-        <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark  p-32 pt-16">
+        <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark  p-32 pt-16
+        mb:pt-8 md:!pt-12 sm:!pt-8 xl:px-24 lg:px-16  md:px-12 sm:px-8">
           <Particles id="tsparticles" options={particleOptions} />
           <ParticlesContainer />
           <AnimatedText
