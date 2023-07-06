@@ -161,24 +161,24 @@ const projects = () => {
                 github="https://github.com/king0203/movieflix"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Fitness Application"
+                title="Banking System"
                 link="https://github.com/king0203/Online-Banking-System"
-                img={fitness}
+                img={bank}
                 github="https://github.com/king0203/Online-Banking-System"
               />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
+            </div> */}
+            <div className="col-span-6 sm:col-span-12">
+              <Project
                 title="SecurX"
                 tech="React, Express, MongoDB, NodeJS"
-                summary="
-                SecurX is a password manager application that ensures strong data protection using MERN.
-                 It incorporates RSA encryption and SHA-256 hashing algorithms to guarantee cryptographic 
-                 security. As a developer, I primarily focused on front-end development.
-                "
-                link="https://securex-ultimate-password-manager.netlify.app/"
+                // summary="
+                // SecurX is a password manager application that ensures strong data protection using MERN.
+                //  It incorporates RSA encryption and SHA-256 hashing algorithms to guarantee cryptographic 
+                //  security. As a developer, I primarily focused on front-end development.
+                // "
+                link="https://github.com/king0203/SecurX"
                 img={securx}
                 github="https://github.com/king0203/SecurX"
               />
