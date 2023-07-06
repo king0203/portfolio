@@ -37,6 +37,7 @@ const FeaturedProject = ({  title,tech, summary, img, link, github }) => {
           alt={title}
           className="w-full h-auto border-4 border-gray-300"
           priority
+          quality={100}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
@@ -92,6 +93,7 @@ const Project = ({  title,tech, img, link, github }) => {
           alt={title}
           className="w-full h-auto border-4 border-gray-300"
           priority
+          quality={100}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
