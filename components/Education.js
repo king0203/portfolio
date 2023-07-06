@@ -31,7 +31,7 @@ const Education = () => {
   const ref1 = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref1,
-    offset: ["start end", "center start"],
+    offset: ["start end", "center center"],
   });
   return (
     <div className="my-32">

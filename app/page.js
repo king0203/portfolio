@@ -30,7 +30,7 @@ export default function Home() {
           <div className="w-1/2 md:w-3/4">
             <Image
               src="/Images/bg1.png"
-              className="lg:hidden md:inline-block md:w-full md:p-8 md:mb-4"
+              className="lg:hidden md:inline-block md:w-full md:mb-4"
               alt="bg"
               width={450}
               height={450}
