@@ -21,17 +21,17 @@ function Skills() {
     <div className="pt-20 flex flex-col ">
       <div className="  mb-8 flex flex-col w-full">
         <h1 className="text-7xl font-bold mb-12 text-center md:text-6xl md:mb-16 xs:text-4xl">Skills</h1>
-        <p className="text-xl font-medium">
+        <p className="text-xl font-medium sm:text-[16px]">
           I love to learn new technologies, and this has helped me dive deep
           into different fields and master the skills of developing agile and
           scalable applications.
         </p>
       </div>
-      <div className="  w-full mt-8  flex justify-start flex-wrap">
+      <div className="  w-full mt-8  flex justify-start sm:justify-between flex-wrap">
         {Icons.map(
           (language, index) =>
             language.icon && (
-              <div className="w-20 h-20 group flex flex-col" key={index}>
+              <div className="w-20 h-20 sm:w-16 sm:h-16 group flex flex-col" key={index}>
                 <IconItem
                   icon={language.icon}
                   options={language.options}

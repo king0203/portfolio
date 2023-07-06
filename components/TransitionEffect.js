@@ -25,7 +25,7 @@ const TransitionEffect = () => {
         }}
       />
       <motion.div
-        className="top-0 bottom-0 fixed right-full w-screen h-screen z-10 bg-dark"
+        className="top-0 bottom-0 fixed right-full w-screen h-screen z-30 bg-dark"
         initial={{ x: "100%", width: "100%" }}
         animate={{ x: "0%", width: "0%" }}
         transition={{

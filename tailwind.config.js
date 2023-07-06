@@ -16,7 +16,10 @@ module.exports = {
         light: "#f5f5f5",
         primary: "#B63E96", // 240,86,199
         primaryDark: "#58E6D9", // 80,230,217
-    }
+    },
+    boxShadow: {
+      "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
+  }
     },
     screens: {
       "2xl": { max: "1535px" },

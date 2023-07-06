@@ -18,13 +18,13 @@ const about = () => {
     <>
     <TransitionEffect/>
       <Navbar />
-      <main className="flex w-full flex-col justify-center items-center  dark:text-light">
-        <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark p-32  mb:pt-8
-         pt-16 md:!pt-12 sm:!pt-8 xl:px-24 lg:px-16  md:px-12 sm:px-8">
+      <main className="flex w-full flex-col justify-center items-center bg-light dark:bg-dark  dark:text-light p-32  mb:pt-8
+         pt-4 md:!pt-12 sm:!pt-8 xl:px-24 lg:px-16  md:px-12 sm:px-8">
+        <div className="w-full h-full inline-block z-0  bg-light dark:bg-dark ">
           <Particles id="tsparticles" options={particleOptions} />
           <ParticlesContainer />
           <AnimatedText text="Passion Fuels Purpose!" classname="mb-16 lg:!text-7xl md:!text-6xl sm:!text-4xl sm:!mb-8" />
-          <div className="grid grid-cols-8 gap-16 w-full">
+          <div className="grid grid-cols-8 gap-16 w-full sm:gap-8">
             <div className=" col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-primary">
                 About Me
@@ -44,9 +44,9 @@ const about = () => {
 
             <div
               className="col-span-3 md:place-self-center relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-6
-            dark:border-light dark:bg-dark xl:col-span-4  md:order-1 md:col-span-8 md:w-3/4 "
+            dark:border-light dark:bg-dark xl:col-span-4  md:order-1 md:col-span-8 md:w-3/5 sm:w-[90%] "
             >
-              <div className="absolute top-0 -right-3 -z-10 bg-dark dark:bg-light w-[102%] h-[103%] md:h-[102%] rounded-[2rem]" />
+              <div className="absolute top-0 -right-3 -z-10 bg-dark dark:bg-light w-[102%] h-[103%] rounded-3xl" />
               <Image
                 src={profile}
                 alt="profile"
@@ -60,15 +60,15 @@ const about = () => {
             </div>
 
             <div className="col-span-2 flex flex-col items-end justify-evenly xl:col-span-8 xl:flex-row xl:items-center md:order-3">
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col items-end justify-center  xl:items-center">
                 <span className="inline-block text-7xl font-bold  md:text-5xl sm:text-4xl xs:text-3xl">10+</span>
-                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark">
+                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark  xl:items-center md:text-lg sm:text-base xs:text-sm">
                   Projects
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col items-end justify-center  xl:items-center">
                 <span className="inline-block text-7xl font-bold  md:text-5xl sm:text-4xl xs:text-3xl">1+</span>
-                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark">
+                <h2 className="text-xl capitalize font-medium text-dark/75 dark:text-primaryDark  xl:items-center md:text-lg sm:text-base xs:text-sm">
                   Years Of Experience
                 </h2>
               </div>
