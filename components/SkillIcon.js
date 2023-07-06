@@ -1,4 +1,4 @@
-import { SiJavascript, SiCss3, SiHtml5, SiMongodb, SiPython, SiReact, SiGithub, SiGooglecloud, SiLinux, SiNetlify, SiTypescript, SiUbuntu, SiVercel, SiCplusplus, SiExpress, SiTailwindcss, SiPostman, SiNextdotjs } from "react-icons/si";
+import { SiC, SiJavascript, SiCss3, SiHtml5, SiMongodb, SiPython, SiReact, SiGithub, SiGooglecloud, SiLinux, SiNetlify, SiTypescript, SiUbuntu, SiVercel, SiCplusplus, SiExpress, SiTailwindcss, SiPostman, SiNextdotjs } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 
 const data = [
@@ -15,6 +15,21 @@ const data = [
     icon: SiCss3,
     options: {
       color: '#1572B6',
+    }
+  },
+  {
+    name: 'C',
+    icon: SiC,
+    options: {
+      color: '#1572B6',
+    }
+  },
+  {
+    name: 'vercel',
+    icon: SiVercel,
+    options: {
+      color: '#000000',
+      className:'dark:fill-white '
     }
   },
   {

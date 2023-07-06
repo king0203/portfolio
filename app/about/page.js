@@ -29,25 +29,15 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-medium">
-                Hi, I am Darshan Arkhade, a web developer and UI/UX designer
-                with a passion for creating beautiful, functional, and
-                user-centered digital experiences. With 1 years of experience in
-                the field. I am always looking for new and innovative ways to
-                bring my clients visions to life.
+              Hi,  I am Darshan Arkhade, and I am a passionate web developer with a keen interest in developing dynamic and interactive websites. With a strong foundation in web development technologies, I strive to create engaging user experiences through innovative design and functionality.
               </p>
 
               <p className="font-medium my-4">
-                I believe that design is about more than just making things look
-                pretty its about solving problems and creating intuitive,
-                enjoyable experiences for users.
+              In addition to web development, I have a genuine fascination for blockchain technology and its potential applications. Exploring decentralized solutions and understanding the intricacies of blockchain has been an exciting journey for me. I am always eager to expand my knowledge in this evolving field.
               </p>
 
               <p className="font-medium">
-                Whether I am working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+              Furthermore, I have a solid understanding of Data Structures and Algorithms (DSA), which allows me to write efficient and optimized code. I enjoy solving complex problems and finding elegant solutions by applying DSA principles
               </p>
             </div>
 

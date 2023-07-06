@@ -11,11 +11,12 @@ import Link from "next/link";
 import { GithubIcon } from "@/components/Icon";
 import securx from "../../public/Images/securx.png";
 import movieflix from "../../public/Images/movieflix.png";
+import degchain from "../../public/Images/degchain.png";
 import portfolio from "../../public/Images/portfolio.png";
 import fitness from "../../public/Images/fitness.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({  title,tech, summary, img, link, github }) => {
   return (
     <article
       className="w-full p-12 flex items-center relative justify-between rounded-3xl rounded-br-2xl
@@ -39,9 +40,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
-          {type}
-        </span>
+       
         <Link
           href={link}
           target="_blank"
@@ -49,6 +48,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold ">{title}</h2>
         </Link>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {tech}
+        </span>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center ">
           <Link href={github} target="_blank" className="w-10">
@@ -67,7 +69,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ type, title, img, link, github }) => {
+const Project = ({  title,tech, img, link, github }) => {
   return (
     <article
       className="w-full p-6 flex flex-col items-center  justify-between rounded-2xl border
@@ -91,9 +93,7 @@ const Project = ({ type, title, img, link, github }) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4 ">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
-          {type}
-        </span>
+       
         <Link
           href={link}
           target="_blank"
@@ -101,6 +101,9 @@ const Project = ({ type, title, img, link, github }) => {
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold ">{title}</h2>
         </Link>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {tech}
+        </span>
         <div className="mt-2 flex w-full justify-between items-center ">
           <Link
             href={link}
@@ -134,9 +137,9 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 ">
           <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
                 title="Portfolio"
-                summary="A professional portfolio website using Next JS, Framer-motion, and Tailwind CSS. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                tech="NextJs, Tailwind, Framer Motion"
+                summary="A professional portfolio website. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
                 link="https://darshan-dev.vercel.app/"
                 img={portfolio}
                 github="https://github.com/king0203/portfolio"
@@ -145,8 +148,8 @@ const projects = () => {
            
             <div className="col-span-6">
               <Project
-                type="Project"
                 title="MovieFlix"
+                tech="NextJs, Rapid-API, MongoDB"
                 link="https://github.com/king0203/movieflix"
                 img={movieflix}
                 github="https://github.com/king0203/movieflix"
@@ -154,7 +157,6 @@ const projects = () => {
             </div>
             <div className="col-span-6">
               <Project
-                type="Project"
                 title="Fitness Application"
                 link="https://github.com/king0203/Online-Banking-System"
                 img={fitness}
@@ -163,36 +165,34 @@ const projects = () => {
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                type="Featured Project"
-                title="SecurX- Password Manager"
+                title="SecurX"
+                tech="React, Express, MongoDB, NodeJS"
                 summary="
-                Developed a cryptographically secured password manager, SecurX using Node.js, RSA encryption, and SHA-256
-hashing for robust data protection.
+                SecurX is a password manager application that ensures strong data protection using MERN.
+                 It incorporates RSA encryption and SHA-256 hashing algorithms to guarantee cryptographic 
+                 security. As a developer, I primarily focused on front-end development.
                 "
                 link="https://securex-ultimate-password-manager.netlify.app/"
                 img={securx}
                 github="https://github.com/king0203/SecurX"
               />
             </div>
-
-            {/* <div className="col-span-6">
-              <Project
-                type="Project"
-                title="Banking System"
-                link="https://github.com/king0203/Online-Banking-System"
-                img={securx}
-                github="https://github.com/king0203/Online-Banking-System"
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Degchain"
+                tech="NextJs, Tailwind CSS, Solidity, Hardhat, Ether.js, IPFS "
+                summary="
+                The Decentralized Gradesheet System, which leverages blockchain technology and 
+                decentralized storage, transforms the way grade sheets are managed in education. 
+               As a developer, I played a significant role in the project, focusing mainly on front-end technologies 
+                "
+                link="https://github.com/DegChain/Degchain-Frontend"
+                img={degchain}
+                github="https://github.com/DegChain/Degchain-Frontend"
               />
             </div>
-            <div className="col-span-6">
-              <Project
-                type="Project"
-                title="Banking System"
-                link="https://github.com/king0203/Online-Banking-System"
-                img={securx}
-                github="https://github.com/king0203/Online-Banking-System"
-              />
-            </div> */}
+
+
           </div>
         </div>
       </main>
