@@ -25,7 +25,7 @@ export default function Home() {
       <Navbar />
 
       <div className="w-full h-full inline-block z-0 text-dark dark:text-light bg-light dark:bg-dark 
-      p-32 !pt-4 lg:!pt-28 md:!pt-12 sm:!pt-4 xl:px-24 lg:px-16  md:px-12 sm:px-8">
+      p-32 !pt-4 lg:!pt-28 md:!pt-12 sm:!pt-12 xl:px-24 lg:px-16  md:px-12 sm:px-8">
         <div className="flex items-center justify-between w-full lg:flex-col">
           <div className="w-1/2 md:w-3/4">
             <Image
