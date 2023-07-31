@@ -13,7 +13,8 @@ import securx from "../../public/Images/securx.png";
 import movieflix from "../../public/Images/movieflix.png";
 import degchain from "../../public/Images/degchain.png";
 import portfolio from "../../public/Images/portfolio.png";
-import fitness from "../../public/Images/fitness.png";
+import coinwatch from "../../public/Images/coinwatch.png";
+import extension from "../../public/Images/extension.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({  title,tech, summary, img, link, github }) => {
@@ -151,7 +152,23 @@ const projects = () => {
                 github="https://github.com/king0203/portfolio"
               />
             </div>
-           
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="CoinWatch"
+                tech="React, Rapid-API, Redux, Chartjs"
+                link="https://coinwatch-six.vercel.app"
+                img={coinwatch}
+                github="https://github.com/king0203/CoinWatch"
+              />
+            </div> <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="VidMark"
+                tech="Javascript- Chrome Extension"
+                link="https://github.com/king0203/Vidmark-Chrome-Extension"
+                img={extension}
+                github="https://github.com/king0203/Vidmark-Chrome-Extension"
+              />
+            </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="MovieFlix"
@@ -161,14 +178,7 @@ const projects = () => {
                 github="https://github.com/king0203/movieflix"
               />
             </div>
-            {/* <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Banking System"
-                link="https://github.com/king0203/Online-Banking-System"
-                img={bank}
-                github="https://github.com/king0203/Online-Banking-System"
-              />
-            </div> */}
+        
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="SecurX"

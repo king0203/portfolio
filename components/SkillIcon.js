@@ -1,148 +1,183 @@
-import { SiC, SiJavascript, SiCss3, SiHtml5, SiMongodb, SiPython, SiReact, SiGithub, SiGooglecloud, SiLinux, SiNetlify, SiTypescript, SiUbuntu, SiVercel, SiCplusplus, SiExpress, SiTailwindcss, SiPostman, SiNextdotjs } from "react-icons/si";
+import {
+  SiC,
+  SiFramer,
+  SiRedux,
+  SiJavascript,
+  SiCss3,
+  SiHtml5,
+  SiMongodb,
+  SiPython,
+  SiReact,
+  SiGithub,
+  SiGooglecloud,
+  SiLinux,
+  SiNetlify,
+  SiTypescript,
+  SiUbuntu,
+  SiVercel,
+  SiCplusplus,
+  SiExpress,
+  SiTailwindcss,
+  SiPostman,
+  SiNextdotjs,
+} from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 
 const data = [
   {
-    name: 'JavaScript',
-    icon: SiJavascript,
-    options: {
-      color: 'yellow',
-      className : 'bg-black'
-    }
-  },
-  {
-    name: 'CSS3',
-    icon: SiCss3,
-    options: {
-      color: '#1572B6',
-    }
-  },
-  {
-    name: 'C',
+    name: "C",
     icon: SiC,
     options: {
-      color: '#1572B6',
-    }
+      color: "#1572B6",
+    },
   },
   {
-    name: 'vercel',
-    icon: SiVercel,
-    options: {
-      color: '#000000',
-      className:'dark:fill-white '
-    }
-  },
-  {
-    name: 'HTML5',
-    icon: SiHtml5,
-    options: {
-      color: '#E34F26'
-    }
-  },
-  {
-    name: 'MongoDB',
-    icon: SiMongodb,
-    options: {
-      color: '#47A248'
-    }
-  },
-  {
-    name: 'NodeJS',
-    icon: FaNodeJs,
-    options: {
-      color: '#339933'
-    }
-  },
-  {
-    name: 'Python',
-    icon: SiPython,
-    options: {
-      color: '#3776AB'
-    }
-  },
-  {
-    name: 'React',
-    icon: SiReact,
-    options: {
-      color: '#61DAFB'
-    }
-  },
-  {
-    name: 'GitHub',
-    icon: SiGithub,
-    options: {
-      color: 'black',
-      className:'dark:fill-white '
-    }
-  },
-
-  {
-    name: 'Linux',
-    icon: SiLinux,
-    options: {
-      color: 'black',
-      className:'dark:bg-light rounded-full p-1'
-    }
-  },
-  {
-    name: 'NextJs',
-    icon: SiNextdotjs,
-    options: {
-      color: 'black',
-      className:'dark:fill-white '
-    }
-  },
-  {
-    name: 'TypeScript',
-    icon: SiTypescript,
-    options: {
-      color: '#3178C6'
-    }
-  },
-  {
-    name: 'Ubuntu',
-    icon: SiUbuntu,
-    options: {
-      color: '#E95420'
-    }
-  },
-  {
-    name: 'C++',
+    name: "C++",
     icon: SiCplusplus,
     options: {
-      color: '#00599C'
-    }
+      color: "#00599C",
+    },
   },
   {
-    name: 'Google Cloud Platform',
-    icon: SiGooglecloud,
+    name: "Python",
+    icon: SiPython,
     options: {
-      color: '#4285F4'
-    }
+      color: "#3776AB",
+    },
   },
   {
-    name: 'Express',
-    icon: SiExpress,
+    name: "HTML5",
+    icon: SiHtml5,
     options: {
-      color: 'black',
-      className:'dark:fill-white '
-    }
+      color: "#E34F26",
+    },
   },
   {
-    name: 'Tailwind CSS',
+    name: "CSS3",
+    icon: SiCss3,
+    options: {
+      color: "#1572B6",
+    },
+  },
+  {
+    name: "Tailwind CSS",
     icon: SiTailwindcss,
     options: {
-      color: '#06B6D4'
-    }
+      color: "#06B6D4",
+    },
   },
   {
-    name: 'Postman',
+    name: "JavaScript",
+    icon: SiJavascript,
+    options: {
+      color: "yellow",
+      className: "bg-black",
+    },
+  },
+  {
+    name: "TypeScript",
+    icon: SiTypescript,
+    options: {
+      color: "#3178C6",
+    },
+  },
+  {
+    name: "React",
+    icon: SiReact,
+    options: {
+      color: "#61DAFB",
+    },
+  },
+  {
+    name: "Redux",
+    icon: SiRedux,
+    options: {
+      color: "violet",
+    },
+  },
+  {
+    name: "Framer Motion",
+    icon: SiFramer,
+    options: {
+      color: "black",
+      className: "dark:fill-white ",
+    },
+  },
+  {
+    name: "NextJs",
+    icon: SiNextdotjs,
+    options: {
+      color: "black",
+      className: "dark:fill-white ",
+    },
+  },
+  {
+    name: "NodeJS",
+    icon: FaNodeJs,
+    options: {
+      color: "#339933",
+    },
+  },
+  {
+    name: "Express",
+    icon: SiExpress,
+    options: {
+      color: "black",
+      className: "dark:fill-white ",
+    },
+  },
+  {
+    name: "Postman",
     icon: SiPostman,
     options: {
-      color: '#FF6C37'
-    }
+      color: "#FF6C37",
+    },
   },
-  
+  {
+    name: "MongoDB",
+    icon: SiMongodb,
+    options: {
+      color: "#47A248",
+    },
+  },
+  {
+    name: "GitHub",
+    icon: SiGithub,
+    options: {
+      color: "black",
+      className: "dark:fill-white ",
+    },
+  },
+  {
+    name: "Linux",
+    icon: SiLinux,
+    options: {
+      color: "black",
+      className: "dark:bg-light rounded-full p-1",
+    },
+  }, 
+  {
+    name: "Ubuntu",
+    icon: SiUbuntu,
+    options: {
+      color: "#E95420",
+    },
+  },
+  {
+    name: "vercel",
+    icon: SiVercel,
+    options: {
+      color: "#000000",
+      className: "dark:fill-white ",
+    },
+  },
+  {
+    name: "Google Cloud Platform",
+    icon: SiGooglecloud,
+    options: {
+      color: "#4285F4",
+    },
+  }, 
 ];
 
-export const Icons = data.sort((a, b) => a.name.localeCompare(b.name));
+export const Icons = data;
